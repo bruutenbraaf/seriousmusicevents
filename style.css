@@ -1,0 +1,18 @@
+/*
+Theme Name: Serious Music Events
+Author: Convident
+Author URI: https://bruutebraaf.nl
+Description: Thema gebouwd voor SME
+Version: 0.0.0
+License: /
+License URI: /
+Text Domain: sme-theme
+
+/* algemeen */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i');
+@import url('css/bootstrap.min.css');
+@import url('css/slick.css');
+@import url('css/style.min.css');
+
+
