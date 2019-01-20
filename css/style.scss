@@ -6,6 +6,7 @@ $carousel-height: 80vh;
 $text-color: #828282;
 $secondaire-btn: #333333;
 $footer: #111111;
+$titles:#333333;
 
 * {
 	font-size: 16px;
@@ -320,6 +321,7 @@ nav {
 			.dienst-title {
 				font-weight: bold;
 				font-size: 20px;
+				color:$titles;
 			}
 			p {
 				color: $text-color;
@@ -757,7 +759,167 @@ footer {
 	}
 }
 
+// Single > Diensten
 
+.dienst-header {
+	width:100%;
+	background-position: center center;
+	background-size: cover;
+	position: relative;
+	.back-btn {
+		top: 60px;
+	    width: 46px;
+	    height: 46px;
+	    background: #fff;
+	    position: absolute;
+	    background-image: url(../img/arrow-grey.svg);
+	    background-position: center center;
+	    background-repeat: no-repeat;
+	    transform: rotate(-180deg);
+	    &:hover {
+		    cursor: pointer;
+		    background: #001aff;
+		    border-color: #001aff;
+		    background-image: url(../img/arrow-white.svg);
+		    background-position: center center;
+			background-repeat: no-repeat;
+	    }
+	}
+	.next-btn {
+		top: 60px;
+		right: 0px;
+	    width: 46px;
+	    height: 46px;
+	    background: #fff;
+	    position: absolute;
+	    background-image: url(../img/arrow-grey.svg);
+	    background-position: center center;
+	    background-repeat: no-repeat;
+	    &:hover {
+		    cursor: pointer;
+		    background: #001aff;
+		    border-color: #001aff;
+		    background-image: url(../img/arrow-white.svg);
+		    background-position: center center;
+			background-repeat: no-repeat;
+	    }
+	}
+	.container {
+		.row {
+			min-height: 80vh;
+		    position: relative;
+		    display: flex;
+		    align-items: center;
+			.title {
+				position: absolute;
+			    bottom: 0;
+			    color: #fff;
+			    font-size: 108px;
+			    font-weight: 700;
+			    max-height: 40%;
+			    text-transform: uppercase;
+			    line-height: 58px;
+			}
+			.aanvragen {
+				padding: 60px 15px 15px 15px;
+				background:white;
+				position: relative;
+				h2 {
+					color: $titles;
+					text-transform: uppercase;
+					font-weight: bold;
+					margin-bottom:20px;
+				}
+				.close-aanvragen {
+					position: absolute;
+				    right: 15px;
+				    top: 15px;
+				    width: 18px;
+				    height: 18px;
+					div {
+						background: $titles;
+					    width: 100%;
+					    height: 4px;
+					    border-radius: 2px;
+					    margin: -4px;
+					    position: absolute;
+					    left: 4px;
+					    top: 12px;
+						&:nth-child(1) {
+							transform:rotate(-45deg);
+						}
+						&:nth-child(2) {
+							transform:rotate(45deg);
+						}
+					}
+					&:hover div{
+						background: $second-color;
+						cursor: pointer;
+					}
+					&:hover {
+						cursor: pointer;
+					}
+				}
+			}
+		}
+	}
+}
+
+#andere-diensten {
+	background: #F8FAFF;
+	padding: 60px 0px;
+	margin-bottom: 10px;
+	.container {
+		.row {
+			h2.title {
+				letter-spacing: -1px;
+			    transform: translateX(-5%);
+			    text-transform: uppercase;
+			    font-weight: 700;
+			    font-size: 28px;
+			}
+			.dienst-title {
+				font-weight: 700;
+			    font-size: 20px;
+			    color: $titles;
+			}
+		}
+	}
+	.anderedienst {
+		padding: 30px 15px;
+		p {
+			color: $text-color;
+		}
+	}
+}
+
+#content {
+	padding: 60px 0px;
+	p {
+		color: $text-color;
+	}
+}
+
+.marginauto {
+	margin:0 auto;
+}
+
+.frm_style_formidable-style.with_frm_style label.frm_primary_label {
+	font-weight: normal;
+	font-size: 16px;
+	color: #000000;
+}
+
+
+.aanvragen-hidden {
+	animation: mymove 0.4s forwards;
+}
+
+@keyframes mymove {
+    0% {margin-top: 0px; opacity: 1;}
+    90% {margin-top: -30%; opacity: 0;}
+    100% {margin-top: -30%; opacity: 0; visibility: hidden;}
+}
 
 // buttons
 
@@ -877,4 +1039,39 @@ footer {
 	&:hover:before {
 		margin-right: 10px;
 	}
+}
+
+
+// Input velden
+
+input {
+    -webkit-appearance: none;
+    border: 1px solid #e0e0e0;
+    border-radius: 0px !important;
+    padding: 12px !important;
+    color: black;
+    height: auto !important;
+    box-shadow: none !important;
+}
+
+.nice-select {
+    width: 100%!important;
+    border: 1px solid #d2d2d2 !important;
+    border-radius: 0!important;
+    padding: 1px 10px!important;
+    color: #afafaf !important;
+    height: auto!important;
+    box-shadow: none!important;
+    height: auto !important;
+    margin-bottom:20px;
+}
+
+.nice-select.open .list {
+    opacity: 1;
+    pointer-events: auto;
+    -webkit-transform: scale(1) translateY(0);
+    -ms-transform: scale(1) translateY(0);
+    transform: scale(1) translateY(0);
+    width: 100%;
+    border-radius: 0px;
 }

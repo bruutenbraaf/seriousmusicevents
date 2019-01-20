@@ -87,10 +87,6 @@
 		</div>
 	</div>
 </div>
-
-		<script src="<?php echo esc_url( get_template_directory_uri() )?>/bootstrap/js/bootstrap.min.js"></script>
-		<script src="<?php echo esc_url( get_template_directory_uri() )?>/js/custom.js"></script>
-		<script src="<?php echo esc_url( get_template_directory_uri() )?>/js/slick.min.js"></script>
 		<?php wp_footer(); ?>
 	</body>
 </html>

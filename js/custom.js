@@ -11,3 +11,13 @@ hamburger.click(function() {
 	$( ".main_nav span" ).toggleClass('li-visible');
 	$( ".main_nav .btn" ).toggleClass('btn-visible');
 });
+
+$(document).ready(function() {
+  $('select').niceSelect();
+});
+
+
+var sluiten = $('.close-aanvragen')
+sluiten.click(function() {
+	$(".aanvragen").addClass('aanvragen-hidden');
+});

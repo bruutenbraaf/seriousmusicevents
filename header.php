@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="author" content="Convident">
     <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-    <link href="https://unpkg.com/ionicons@4.5.0/dist/css/ionicons.min.css" rel="stylesheet">
 
     <title><?php wp_title(''); ?></title>
 
