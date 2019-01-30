@@ -26,6 +26,17 @@ a:hover {
 	transition: all .3s ease-in-out;	
 }
 
+section {
+	margin: 60px 0px;
+	padding: 30px 0px;
+	background-position: center center;
+	background-size: cover;
+}
+
+p {
+	color: $text-color;
+}
+
 // Top nav
 
 .fixed {
